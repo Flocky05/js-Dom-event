@@ -1,0 +1,1 @@
+console.log("Plz enter your name:")
