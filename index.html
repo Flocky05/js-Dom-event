@@ -7,18 +7,29 @@
     <title>Welcome to new events</title>
     <style>
         .welcome{
-            color: red;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1 class="welcome">
+        <h1 onclick="console.log('Why clike me?')" class="welcome">
             Welcome to new events.
         </h1>
-        <button>Click Me</button>
+        <!-- type-1 -->
+        <button onclick="console.log(98)">Click Me</button>
+        <button onclick="console.log(3)"> New button</button>
+        <br>
+        <!-- type-2 -->
+        <button onclick="document.body.style.backgroundColor='yellow'"> Make yellow</button>
+        <button onclick="makeGreen()">Make green</button>
+        <!-- type-3 -->
+        <button id="make-blue">blue button</button>
+        <button id="make-purple">Make Purple</button>
     </main>
     <script src="js/event.js"></script>
+    <script>
+       
+    </script>
 </body>
 </html>
