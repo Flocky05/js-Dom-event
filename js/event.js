@@ -19,3 +19,11 @@ const makePurpleButton=document.getElementById('make-purple');
         document.body.style.backgroundColor='purple';
        }
         
+
+//type-4
+const pinkButton=document.getElementById('make-pink');
+       pinkButton.addEventListener('click',makePink);
+
+       function makePink(){
+        document.body.style.backgroundColor="pink";
+       }
