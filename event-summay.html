@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM summary</title>
+</head>
+<body>
+    <h1>Final Js Dom</h1>
+    <h3 id="handler-status"> Default Text </h3>
+    <p id="input-text-display">Default Text summary</p>
+    <input id="input-filed" type="text">
+    <button id="btn-update">submite</button>
+    <br>
+    <br>
+    <button onclick="handleClick()">Handle Event by Add onclick Function</button>
+    <button id="event-listner"> Handle the account of company</button>
+    <script>
+        function handleClick(){
+            const handlerStatus=document.getElementById('handler-status');
+            handlerStatus.innerText="Handle Event by two click at a time";
+        }
+        document.getElementById('event-listner').addEventListener('click',function(){
+            const handlerStatus =document.getElementById('handler-status');
+            handlerStatus.innerText="Who are you?I don't know you."
+        })
+        document.getElementById('btn-update').addEventListener('click',function(){
+           const inputFiled=document.getElementById('input-filed');
+           const inputText=inputFiled.value;
+           const p=document.getElementById('input-text-display');
+           p.innerText=inputText;
+           inputFiled.value="";
+        })
+    </script>
+</body>
+</html>
