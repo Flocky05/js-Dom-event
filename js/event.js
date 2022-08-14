@@ -27,3 +27,8 @@ const pinkButton=document.getElementById('make-pink');
        function makePink(){
         document.body.style.backgroundColor="pink";
        }
+// most important type
+// <button id="make-red">Make red</button>
+document.getElementById('make-red').addEventListener('click',function(){
+    document.body.style.backgroundColor='red';
+   })
